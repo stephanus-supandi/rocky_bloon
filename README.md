@@ -1,6 +1,6 @@
 # rocky_bloon — Rocky Bloon: 2D World Champion Boxing Club (v0.1)
 
-![Rocky Bloon v0.1 gameplay](assets/rocky_bloon_v0.1.png)
+![Rocky Bloon v0.1 gameplay](assets/rocky_bloon_v0.1.jpeg)
 
                    A/D move | SPACE guard | J/K/L/I attack
 A 2D boxing game/simulation inspired by old-school Nintendo-era arcade boxing.
