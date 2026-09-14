@@ -1,7 +1,10 @@
 # rocky_bloon — Rocky Bloon: 2D World Champion Boxing Club (v0.1)
 
+<<<<<<< HEAD
 ![Rocky Bloon v0.1 gameplay](assets/rocky_bloon_v0.1.png)
 
+=======
+>>>>>>> c892c85a30de4ea77026105cb4945019cebb8f1d
 A 2D boxing game/simulation inspired by old-school Nintendo-era arcade boxing.
 
 You control **ROCKY_BLOON**; the opponent **IRON_BLOON** is a rule-based, deterministic FSM AI.
@@ -141,6 +144,7 @@ Crowd stays dark, ring and fighters are the focal point, HUD is never darkened.
 
 ```text
 knocked down           → RECOVER
+<<<<<<< HEAD
 stunned                → STUNNED
 stamina < 25%          → RETREAT (breathe)
 opponent mid-swing     → counter_prob? ATTACK
@@ -149,6 +153,16 @@ opponent mid-swing     → counter_prob? ATTACK
 opponent vulnerable    → APPROACH / ATTACK
 dist > preferred + 0.7 → APPROACH
 dist < preferred − 0.5 → sometimes RETREAT
+=======
+stunned                 → STUNNED
+stamina < 25%           → RETREAT (breathe)
+opponent mid-swing      → counter_prob? ATTACK
+                          else defense? GUARD
+                          else EVADE
+opponent vulnerable     → APPROACH / ATTACK
+dist > preferred + 0.7  → APPROACH
+dist < preferred − 0.5  → sometimes RETREAT
+>>>>>>> c892c85a30de4ea77026105cb4945019cebb8f1d
 else roll vs aggression → ATTACK / GUARD / RETREAT / IDLE
 ```
 
