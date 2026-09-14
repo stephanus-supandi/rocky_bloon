@@ -1,5 +1,31 @@
 # rocky_bloon — Rocky Bloon: 2D World Champion Boxing Club (v0.1)
 
+```text
+================================================================================
+| [ ROCKY BLOON ]                                               [ IRON BLOON ] |
+| HP  [██████████████  ]                             [████████████████  ] HP   |
+| STM [████████        ]       ROUND 2 - 01:14       [████████████      ] STM  |
+================================================================================
+|                                                                              |
+|            . . . (Dark Spectator Area / Fiksi Visual Spotlight) . . .        |
+|                                                                              |
+|      +--------------------------------------------------------------+        |
+|      | \                                                          / |        |
+|      |   \                                                      /   |        |
+|      |     \                                                  /     |        |
+|      |=======\==============================================/=======|        |
+|      |        |                                            |        |        |
+|      |        |                   [ HIT! ]                 |        |        |
+|      |        |                                            |        |        |
+|      |        |             _O_                   _O_      |        |        |
+|      |        |            / | \--o           o--/ | \     |        |        |
+|      |        |              |                     |       |        |        |
+|      |        |             / \                   / \      |        |        |
+|      |        |            ROCKY                 IRON      |        |        |
+|      +--------+--------------------------------------------+--------+        |
+|                                                                              |
+================================================================================
+                   A/D move | SPACE guard | J/K/L/I attack
 A 2D boxing game/simulation inspired by old-school Nintendo-era arcade boxing.
 
 You control **ROCKY_BLOON**; the opponent **IRON_BLOON** is a rule-based, deterministic FSM AI.
@@ -139,15 +165,15 @@ Crowd stays dark, ring and fighters are the focal point, HUD is never darkened.
 
 ```text
 knocked down           → RECOVER
-stunned                → STUNNED
-stamina < 25%          → RETREAT (breathe)
-opponent mid-swing     → counter_prob? ATTACK
-                         else defense? GUARD
-                         else EVADE
-opponent vulnerable    → APPROACH / ATTACK
-dist > preferred + 0.7 → APPROACH
-dist < preferred − 0.5 → sometimes RETREAT
-else roll vs aggression → ATTACK / GUARD / RETREAT / IDLE
+stunned                 → STUNNED
+stamina < 25%           → RETREAT (breathe)
+opponent mid-swing      → counter_prob? ATTACK
+                          else defense? GUARD
+                          else EVADE
+opponent vulnerable     → APPROACH / ATTACK
+dist > preferred + 0.7  → APPROACH
+dist < preferred − 0.5  → sometimes RETREAT
+>>>>>>> c892c85a30de4ea77026105cb4945019cebb8f1d
 ```
 
 Parameters: `aggression`, `defense`, `reaction`, `counter_probability`, `preferred_range`, `stamina_threshold`, `hurt_threshold`.
